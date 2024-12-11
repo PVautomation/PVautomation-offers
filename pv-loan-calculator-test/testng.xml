@@ -2,10 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite1">
 
+<!-- 
   <listeners>
-    <!-- Add JUnitXMLReporter to generate JUnit-compatible reports -->
-    <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+     <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
   </listeners>
+-->
+
+  <!-- Register your custom listener for the JUnit reporting -->
+  <listeners>
+    <listener class-name="loanCalculatorPackage.CustomJUnitReporter" />
+  </listeners>
+
 
   <test name="Test1">
     <classes>
@@ -19,3 +26,6 @@
   </test> <!-- Test -->
 
 </suite> <!-- Suite -->
+
+
+

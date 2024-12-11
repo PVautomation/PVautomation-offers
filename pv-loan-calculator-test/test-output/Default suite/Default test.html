@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 10 19:07:31 CST 2024</td>
+<td>Started on:</td><td>Wed Dec 11 14:05:01 CST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>256 seconds (256922 ms)</td>
+<tr><td>Total time:</td><td>475 seconds (475439 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='loanCalculatorPackage.LoanCalculatorTestClass1.testLc1()'><b>testLc1</b><br>Test class: loanCalculatorPackage.LoanCalculatorTestClass1</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+<td title='loanCalculatorPackage.LoanCalculatorTestClass1.OfferTest()'><b>OfferTest</b><br>Test class: loanCalculatorPackage.LoanCalculatorTestClass1</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.chakra-checkbox__control&quot;}
+  (Session info: chrome=131.0.6778.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4ccba8c6b31b515da57f26aa63ccd0b, get {url=https://www-test.republicfinance.com/monthly-payment-calculator}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PVENKA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59559}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59559/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
+Command: [781a486955471b1ecc3e7f5db8b4aa45, findElement {value=.chakra-checkbox__control, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.110, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PVENKA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57539/devtoo..., se:cdpVersion: 131.0.6778.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 781a486955471b1ecc3e7f5db8b4aa45
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,8 +96,11 @@ Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-	at loanCalculatorPackage.LoanCalculatorTestClass1.testLc1(LoanCalculatorTestClass1.java:52)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at loanCalculatorPackage.LoanCalculatorTestClass1.OfferTest(LoanCalculatorTestClass1.java:185)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,14 +129,16 @@ Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1202907617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1202907617'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+</pre></div><a href='#' onClick='toggleBox("stack-trace215614514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215614514'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.chakra-checkbox__control&quot;}
+  (Session info: chrome=131.0.6778.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4ccba8c6b31b515da57f26aa63ccd0b, get {url=https://www-test.republicfinance.com/monthly-payment-calculator}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PVENKA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59559}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59559/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
+Command: [781a486955471b1ecc3e7f5db8b4aa45, findElement {value=.chakra-checkbox__control, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.110, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\PVENKA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57539/devtoo..., se:cdpVersion: 131.0.6778.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 781a486955471b1ecc3e7f5db8b4aa45
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -143,8 +150,11 @@ Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
-	at loanCalculatorPackage.LoanCalculatorTestClass1.testLc1(LoanCalculatorTestClass1.java:52)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at loanCalculatorPackage.LoanCalculatorTestClass1.OfferTest(LoanCalculatorTestClass1.java:185)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,8 +184,8 @@ Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>loanCalculatorPackage.LoanCalculatorTestClass1@434a63ab</td></tr>
+<td>313</td>
+<td>loanCalculatorPackage.LoanCalculatorTestClass1@3e11f9e9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -185,10 +195,17 @@ Session ID: b4ccba8c6b31b515da57f26aa63ccd0b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='loanCalculatorPackage.LoanCalculatorTestClass1.OfferTest()'><b>OfferTest</b><br>Test class: loanCalculatorPackage.LoanCalculatorTestClass1</td>
+<td title='loanCalculatorPackage.LoanCalculatorTestClass1.testLc1()'><b>testLc1</b><br>Test class: loanCalculatorPackage.LoanCalculatorTestClass1<br/>
+<a href="#Output-1968298538" onClick='toggleBox("Output-1968298538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1968298538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1968298538">
+LOAN CALCULATOR TEST GOT EXECUTED SUCCESSFULLY !!!<br/>
+</div>
+</td>
 <td></td>
-<td>253</td>
-<td>loanCalculatorPackage.LoanCalculatorTestClass1@434a63ab</td></tr>
+<td>158</td>
+<td>loanCalculatorPackage.LoanCalculatorTestClass1@3e11f9e9</td></tr>
 </table><p>
 </body>
 </html>

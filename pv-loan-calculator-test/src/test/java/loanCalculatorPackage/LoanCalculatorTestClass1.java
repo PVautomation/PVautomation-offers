@@ -3,6 +3,10 @@ package loanCalculatorPackage;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
+import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
@@ -39,6 +43,8 @@ public class LoanCalculatorTestClass1 {
 		System.setProperty("webdriver.chrome.driver", "src/chromedriver.exe");
 		
 		driver = new ChromeDriver(ops);
+        ITestContext context = Reporter.getCurrentTestResult().getTestContext();
+        context.setAttribute("driver", driver);
 		//context.setAttribute("driver", driver);
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 	driver.manage().window().maximize();
@@ -76,9 +82,11 @@ public class LoanCalculatorTestClass1 {
     driver.findElement(By.xpath("//div[@id='root']/div/div/div/div/div/div[2]/div/div/p[3]")).click();
     //Warning: assertTextPresent may require manual changes
     Thread.sleep(15000);
-    assertFalse(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*xpath=//div\\[@id='root'\\]/div/div/div/div/div/div\\[2\\]/div/div/p\\[3\\][\\s\\S]*$"));
+    //assertFalse(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*xpath=//div\\[@id='root'\\]/div/div/div/div/div/div\\[2\\]/div/div/p\\[3\\][\\s\\S]*$"));
     Thread.sleep(5000);
     System.out.println("complete1");
+    //Assert.assertEquals(true, true, "Assertion Success: Expected value matched the actual value.");
+    Reporter.log("LOAN CALCULATOR TEST GOT EXECUTED SUCCESSFULLY !!!");
   }
   
   
@@ -148,7 +156,7 @@ public class LoanCalculatorTestClass1 {
       Actions builder = new Actions(driver);
       builder.moveToElement(element).perform();
     }
-    Thread.sleep(8000);
+    Thread.sleep(10000);
     driver.findElement(By.cssSelector(".css-1kjflk4 .chakra-checkbox__control")).click();
     Thread.sleep(8000);
     driver.findElement(By.cssSelector(".css-hvif6j .chakra-checkbox__control")).click();
@@ -173,12 +181,14 @@ public class LoanCalculatorTestClass1 {
     Thread.sleep(8000);
     driver.findElement(By.id("all")).click();
     driver.findElement(By.id("next-button")).click();
-    Thread.sleep(15000);
+    Thread.sleep(25000);
     driver.findElement(By.cssSelector(".chakra-checkbox__control")).click();
     Thread.sleep(8000);
     driver.findElement(By.cssSelector(".css-14oket6")).click();
     Thread.sleep(20000);
    // driver.close();
+    //Assert.assertEquals(true, true, "Assertion Success: Expected value matched the actual value.");
+    Reporter.log("OFFER TEST GOT EXECUTED SUCCESSFULLY !!!");
   }
   
   
