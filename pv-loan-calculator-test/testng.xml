@@ -2,72 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite1">
 
-<!--    
-    <listeners>
-        <listener class-name="JavaMavenTestNG.JavaMavenTestNG.ScreenshotListener"/>
-    </listeners>
- -->
-  <test  name="Test1">
-    <classes>
-   <!-- 
-<class name="JavaMavenTestNG.JavaMavenTestNG.NewTest">
-<methods>
-    <include name="test1" />
- <include name="test2" />   
-    <include name="test3" />
-   </methods>
-</class>
--->
-    <class name="loanCalculatorPackage.LoanCalculatorTestClass1">
-      <methods>
-  <include name="testLc1" />  
-<include name="OfferTest" />
- 
+  <listeners>
+    <!-- Add JUnitXMLReporter to generate JUnit-compatible reports -->
+    <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+  </listeners>
 
-      </methods>
-    </class>
+  <test name="Test1">
+    <classes>
+      <class name="loanCalculatorPackage.LoanCalculatorTestClass1">
+        <methods>
+          <include name="testLc1" />  
+          <include name="OfferTest" />
+        </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->
-<!--   
-<include name="crmTest02" />  
-<include name="crmTest3" />  
-<include name="crmTest4" /> 
-<include name="crmTest5" /> 
-<include name="crmTest6" /> 
-<include name="crmTest7" />
-<include name="crmTest8" />
--->
-
-
-<!-- crm start till send for uW - (START) -->
-<!--
-<include name="crmTest1" />
-<include name="crmTest2" /> 
-<include name="crmTest02" />  
-<include name="crmTest3" />  
-<include name="crmTest4" /> 
-<include name="crmTest5" /> 
-<include name="crmTest6" /> 
-<include name="crmTest7" />
--->
-
-<!-- from after-uw-approval till closingPrep-docs - (VIEW)  -->
-<!--
-<include name="crmTest1" />
-<include name="crmTest2" /> 
-<include name="crmTest002" />
-<include name="crmTest8" />
-<include name="crmTest9" />
-<include name="crmTest10" />
--->
-
-<!-- from ach till closingPrep-docs - (VIEW) -->
-<!--
-<include name="crmTest1" />
-<include name="crmTest2" /> 
-<include name="crmTest002" />
-<include name="crmTest9" />
-<include name="crmTest10" />
--->
-
