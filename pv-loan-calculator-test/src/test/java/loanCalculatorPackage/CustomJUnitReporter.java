@@ -102,9 +102,9 @@ public class CustomJUnitReporter extends JUnitXMLReporter implements ITestListen
     }
 
     private String getscreenshotDirectory() {
-       // String workingDir = System.getProperty("user.dir");
-        String screenshotDirectory = Paths.get(System.getProperty("java.io.tmpdir"), SCREENSHOT_DIRECTORY).toString();
-       // String screenshotDirectory = Paths.get(workingDir, SCREENSHOT_DIRECTORY).toString();
+        String workingDir = System.getProperty("user.dir");
+        // String screenshotDirectory = Paths.get(System.getProperty("java.io.tmpdir"), SCREENSHOT_DIRECTORY).toString();
+       String screenshotDirectory = Paths.get(workingDir, SCREENSHOT_DIRECTORY).toString();
 
         File screenshotDir = new File(screenshotDirectory);
         if (!screenshotDir.exists()) {
