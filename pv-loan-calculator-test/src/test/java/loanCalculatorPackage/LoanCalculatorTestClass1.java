@@ -2,6 +2,7 @@ package loanCalculatorPackage;
 
 
 import java.util.regex.Pattern;
+
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
@@ -16,9 +17,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 //import java.io.File;
 import java.time.Duration;
+//import com.microsoft.*;
 
 //import org.apache.commons.io.FileUtils;
 
+//@TestOwner("pvenkatarajan@republicfinance.com")
 public class LoanCalculatorTestClass1 {
   private WebDriver driver;
   private String baseUrl;
@@ -54,6 +57,7 @@ public class LoanCalculatorTestClass1 {
   }
 
   @Test
+  @Parameters("ownerName")
   public void testLc1() throws Exception {
     driver.get("https://www-test.republicfinance.com/monthly-payment-calculator");
     Thread.sleep(15000);
@@ -92,6 +96,7 @@ public class LoanCalculatorTestClass1 {
   
   
   @Test
+  @Parameters("ownerName")
   public void OfferTest() throws Exception {
     driver.get("https://www-test.republicfinance.com/");
     Thread.sleep(15000);
