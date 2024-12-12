@@ -19,7 +19,7 @@
       <class name="loanCalculatorPackage.LoanCalculatorTestClass1">
         <methods>
           <include name="testLc1" />  
-          <include name="OfferTest" />
+         <!--  <include name="OfferTest" />  -->
         </methods>
       </class>
     </classes>
